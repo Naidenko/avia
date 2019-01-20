@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Табло рейсов</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__caption">Табло рейсов</h1>
+    </header>
+    <main class="main">
+        <div class="main__button-wrapper">
+            <button type="button" class="main__departures main__button--active">Вылет</button>
+            <button type="button" class="main__arrivals ">Прилет</button>
+        </div>
+        <form action="#" class="main__form">
+            <div class="main__search-wrapper">
+                <input class="main__search" type="search" name="search" id="search-form" placeholder="Поиск по номеру рейса">
+            </div>
+            <div class="main__delayed-wrapper">
+                <input class="main__filter-input" type="checkbox" name="delayed" id="filter-delayed">
+                <label class="main__filter-name" for="filter-delayed">Только задержанные рейсы</label>
+            </div>
+        </form>
+        <table class="main__table">
+            <thead>
+                <tr class="main__header">
+                    <th>Время</th>
+                    <th>Место назначения</th>
+                    <th>Рейс</th>
+                    <th>Терминал</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody class="main__body">
+            </tbody>
+        </table>
+        <div class="container main__preloader">
+            <div class="item-1"><div></div></div>
+            <div class="item-2"><div></div></div>
+            <div class="item-3"><div></div></div>
+            <div class="item-4"><div></div></div>
+            <div class="item-5"><div></div></div>
+            <div class="item-6"><div></div></div>
+            <div class="item-7"><div></div></div>
+            <div class="item-8"><div></div></div>
+            <div class="item-9"><div></div></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__name">Walle</p>
+        <p class="footer__poweredby">Powered by flightstats.com</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>
